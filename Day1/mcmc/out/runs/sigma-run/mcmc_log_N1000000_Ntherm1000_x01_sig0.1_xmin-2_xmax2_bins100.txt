@@ -1,0 +1,18 @@
+
+MCMC: f(x) = 1/2 N(x0, sigma) + 1/2 N(-x0, sigma)
+x0= 1.0
+sigma= 0.1
+domain [-2.0,2.0]
+Number of bins = 100
+Number of MC samples = 1000000
+Number of thermalization samples = 1000
+
+Starting MCMC...
+After equilibration:
+Accepted = 0.137
+Rejected = 0.863
+After sampling:
+Accepted = 0.159
+Rejected = 0.841
+MSE: 8.063546e-05
+Plot saved successfully as 'out/mcmc_plot_N1000000_Ntherm1000_x01_sig0.1_xmin-2_xmax2_bins100.png'

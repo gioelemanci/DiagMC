@@ -1,0 +1,35 @@
+=== Starting pipeline with N=50000 and M=500 ===
+=== Output is also being saved to: pipeline-50000-500.txt ===
+
+>>> Running area_method.py
+Exact value (pi/4): 0.7853981633974483 
+
+Area method
+N = 50000      estimate = 0.78662
+Elapsed time = 0.130451 s
+
+
+>>> Running mc_estimator.py
+Exact value (pi/4): 0.7853981633974483 
+
+Monte Carlo integration
+N = 50000      estimate = 0.7849085378118825
+Elapsed time = 0.000976 s
+
+
+>>> Running plot.py
+
+>>> Running histogram.py
+
+Exact value (pi/4) = 0.7853981633974483 
+
+MC histogram
+Mean = 0.7853819510526137
+Variance = 9.167937112127893e-07
+
+Area histogram
+Mean = 0.78534384
+Variance = 3.625607654400006e-06
+
+
+=== All tasks completed successfully! ===

@@ -1,0 +1,16 @@
+
+MCMC: f(x) = 1/2 N(x0, sigma) + 1/2 N(-x0, sigma)
+x0= 1.0
+sigma= 1.0
+domain [-1.5,1.5]
+Number of bins = 50
+Number of MC samples = 1000
+Number of thermalization samples = 1000
+
+Starting MCMC...
+After equilibration:
+Accepted = 0.962
+Rejected = 0.038
+After sampling:
+Accepted = 0.961
+Rejected = 0.039
