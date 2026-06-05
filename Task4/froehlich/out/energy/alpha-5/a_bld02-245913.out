@@ -1,0 +1,108 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: --force
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+Reading input file...
+Input file read.
+
+============================
+CONFIGURATION
+============================
+Tau = 1
+Order = 0
+Max. tau = 25
+Max. order = 10000
+Alpha = 5
+Polaron WV = [0, 0, 0]
+Mu = -5.6
+
+============================
+SIMULATION PARAMETERS:
+============================
+Max. time = 10
+Max. steps = 100000000
+Steps per cycle = 1
+Cycles per check = 100000000
+Checkpoint after n sec = 1.79769e+308
+Checkpoint after n steps = 18446744073709551615
+Warm up time = 0
+Warm up steps = 18446744073709551615
+Warm up steps per check = 1000000
+Warm up checkpoint after n sec = 1.79769e+308
+Warmup checkpoint after n steps = 18446744073709551615
+Load checkpoint = 0
+Sort updates = 1
+Skip impossible updates = 0
+Per step callback = 0
+Per cycle callback = 0
+Checkpoint callback = 1
+Warm up per step callback = 0
+Warm up checkpoint callback = 1
+
+Starting warm up...
+Warm up finished: 0 steps done in 5.53e-07 seconds.
+
+Starting simulation...
+Simulation finished.
+
+============================
+UPDATE STATISTICS:
+============================
+Update              Weight              Proposed            Impossible          Accepted            Acc. ratio          
+----------------------------------------------------------------------------------------------------------------
+change_tau          1                   12501037            0                   12501037            1                   
+add_vertex          1                   12502212            44                  5233538             0.418609            
+remove_vertex       1                   12502623            2914880             5233536             0.418595            
+change_vertex_tau   1                   12500454            2959152             9541302             0.763276            
+rescale_diagram     1                   12505581            3143813             8485475             0.678535            
+change_phonon_wv_   1                   12495952            7017037             5478915             0.438455            
+change_phonon_wv_   1                   12494086            4664681             7829405             0.626649            
+change_topology     1                   12498055            2914342             7504192             0.600429            
+
+============================
+SIMULATION STATISTICS:
+============================
+Runtime = 40.3013 sec
+Total time = 40.3013 sec
+Steps done = 100000000
+Steps per sec = 2.48131e+06
+Total steps = 100000000
+Cycles done = 100000000
+Warm up runtime = 5.53e-07
+Warm up steps done = 0
+
+============================
+RESULTS:
+============================
+Estimated normalization = 0.7657161087311973
+
+============================
+DIAGRAM STATS
+============================
+Avg. order = 72.1994896
+Highest order = 408
+
+
+Extracted energy and quasiparticle weight:
+Energy = -5.554764110352997
+Quasiparticle weight = 0.029949527606257468
+

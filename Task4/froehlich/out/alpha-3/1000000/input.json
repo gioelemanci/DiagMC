@@ -1,0 +1,78 @@
+{
+    "Configuration": {
+        "alpha": 3.0,
+        "initial_tau": 1.0,
+        "max_order": 10000,
+        "max_tau": 30.0,
+        "mu": -3.2,
+        "polaron_wv": [
+            0.0,
+            0.0,
+            0.0
+        ]
+    },
+    "Measurements": {
+        "greens_function": {
+            "grid": {
+                "begin": 0.0,
+                "end": 30.0,
+                "size": 101
+            },
+            "is_active": true
+        },
+        "stats": {
+            "is_active": true,
+            "max_order": 10000
+        }
+    },
+    "RNG": {
+        "seed": 8267165747609980501
+    },
+    "Simulation": {
+        "checkpoint_after_steps": 18446744073709551615,
+        "checkpoint_after_time": 1.7976931348623157e+308,
+        "checkpoint_callback": true,
+        "cycles_per_check": 1000000,
+        "load_checkpoint": false,
+        "max_steps": 1000000,
+        "max_time": 10.0,
+        "per_cycle_callback": false,
+        "per_step_callback": false,
+        "skip_impossible_updates": false,
+        "sort_updates": true,
+        "steps_per_cycle": 1,
+        "warmup_checkpoint_after_steps": 18446744073709551615,
+        "warmup_checkpoint_after_time": 1.7976931348623157e+308,
+        "warmup_checkpoint_callback": true,
+        "warmup_per_step_callback": false,
+        "warmup_steps": 18446744073709551615,
+        "warmup_steps_per_cycle": 1000000,
+        "warmup_time": 0.0
+    },
+    "Updates": {
+        "add_vertex": {
+            "weight": 1.0
+        },
+        "change_phonon_wv_direction": {
+            "weight": 1.0
+        },
+        "change_phonon_wv_modulus": {
+            "weight": 1.0
+        },
+        "change_tau": {
+            "weight": 1.0
+        },
+        "change_topology": {
+            "weight": 1.0
+        },
+        "change_vertex_tau": {
+            "weight": 1.0
+        },
+        "remove_vertex": {
+            "weight": 1.0
+        },
+        "rescale_diagram": {
+            "weight": 1.0
+        }
+    }
+}

@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --constraint=blade     ## only blade nodes
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --mem-per-cpu=1G
+#SBATCH --time=00:05:00
+#SBATCH --output=a_%N-%j.out
+
+source /home/software/materia/intel/oneapi/setvars.sh --force
+source ~/DIAGMC-PY/bin/activate
+
+export PATH=/home/software/materia/DIAGMC/bin:${PATH}
+export LD_LIBRARY_PATH=/home/software/materia/DIAGMC/gcc-11.4.0/lib64:${LD_LIBRARY_PATH}
+export UCX_TLS=ud,sm,self
+
+task=free_propagator           # modify for another exercise (e.g. froehlich)
+pp=plot_convergence.py            # modify when different (e.g. post_processing.py)
+
+mpirun ../$task	       		# (--> creates a input.json file with many parameters you could change) 
+mpirun ../$task			# (--> reads the input.json file and runs the simulation)
+
+python3 $pp             	# script in the directory of output

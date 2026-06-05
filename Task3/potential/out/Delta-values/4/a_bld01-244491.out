@@ -1,0 +1,103 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: --force
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+Reading input file...
+Input file read.
+
+============================
+CONFIGURATION
+============================
+Tau = 1
+Max. tau = 10
+Epsilon = 0
+Mu = -1
+Order = 0
+Delta = -0.75
+Max. order = 10000
+Sign = 1
+
+============================
+SIMULATION PARAMETERS:
+============================
+Max. time = 10
+Max. steps = 18446744073709551615
+Steps per cycle = 5
+Cycles per check = 1000000
+Checkpoint after n sec = 1.79769e+308
+Checkpoint after n steps = 18446744073709551615
+Warm up time = 0
+Warm up steps = 18446744073709551615
+Warm up steps per check = 1000000
+Warm up checkpoint after n sec = 1.79769e+308
+Warmup checkpoint after n steps = 18446744073709551615
+Load checkpoint = 0
+Sort updates = 1
+Skip impossible updates = 0
+Per step callback = 0
+Per cycle callback = 0
+Checkpoint callback = 1
+Warm up per step callback = 0
+Warm up checkpoint callback = 1
+
+Starting warm up...
+Warm up finished: 0 steps done in 3.79e-07 seconds.
+
+Starting simulation...
+Simulation finished.
+
+============================
+UPDATE STATISTICS:
+============================
+Update              Weight              Proposed            Impossible          Accepted            Acc. ratio          
+----------------------------------------------------------------------------------------------------------------
+change_tau          1                   19996802            0                   19996802            1                   
+stretch_diagram     1                   20004528            0                   8737707             0.436786            
+add_vertex          1                   20000741            0                   10895715            0.544766            
+remove_vertex       1                   19997929            5460863             10895711            0.544842            
+
+============================
+SIMULATION STATISTICS:
+============================
+Runtime = 10.3866 sec
+Total time = 10.3866 sec
+Steps done = 80000000
+Steps per sec = 7.70224e+06
+Total steps = 80000000
+Cycles done = 16000000
+Warm up runtime = 3.79e-07
+Warm up steps done = 0
+
+============================
+RESULTS:
+============================
+Analytic normalization = 3.6716600055044046
+Estimated normalization = 3.6610244517478643
+Avg. sign = 1
+Analytic sign = 1
+
+============================
+DIAGRAM STATS
+============================
+avg. order = 2.323128125
+highest order = 23
+

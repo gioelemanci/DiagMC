@@ -1,0 +1,105 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: --force
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+Reading input file...
+Input file read.
+
+============================
+CONFIGURATION
+============================
+Tau = 1
+Max. tau = 10
+Epsilon = 0
+Mu = -1
+Order = 0
+Delta = -0.25
+Max. order = 10000
+Sign = 1
+
+============================
+SIMULATION PARAMETERS:
+============================
+Max. time = 10
+Max. steps = 1000
+Steps per cycle = 1
+Cycles per check = 1000
+Checkpoint after n sec = 1.79769e+308
+Checkpoint after n steps = 18446744073709551615
+Warm up time = 0
+Warm up steps = 18446744073709551615
+Warm up steps per check = 1000000
+Warm up checkpoint after n sec = 1.79769e+308
+Warmup checkpoint after n steps = 18446744073709551615
+Load checkpoint = 0
+Sort updates = 1
+Skip impossible updates = 0
+Per step callback = 0
+Per cycle callback = 0
+Checkpoint callback = 1
+Warm up per step callback = 0
+Warm up checkpoint callback = 1
+
+Starting warm up...
+Warm up finished: 0 steps done in 3.82e-07 seconds.
+
+Starting simulation...
+Simulation finished.
+
+============================
+UPDATE STATISTICS:
+============================
+Update              Weight              Proposed            Impossible          Accepted            Acc. ratio          
+----------------------------------------------------------------------------------------------------------------
+change_tau          1                   248                 0                   248                 1                   
+stretch_diagram     1                   265                 0                   225                 0.849057            
+add_vertex          1                   253                 0                   59                  0.233202            
+remove_vertex       1                   234                 175                 59                  0.252137            
+
+============================
+SIMULATION STATISTICS:
+============================
+Runtime = 0.000240485 sec
+Total time = 0.000240485 sec
+Steps done = 1000
+Steps per sec = 4.15826e+06
+Total steps = 1000
+Cycles done = 1000
+Warm up runtime = 3.82e-07
+Warm up steps done = 0
+
+============================
+RESULTS:
+============================
+Analytic normalization = 1.3325958875064696
+Estimated normalization = 1.3279609562685757
+Avg. sign = 1
+Analytic sign = 1
+
+============================
+DIAGRAM STATS
+============================
+avg. order = 0.321
+highest order = 3
+
+/home/STUDENTI/gioele.mancino2/DIAGMC-LAB/Day2/potential/test/plot_fit.py:41: RuntimeWarning: divide by zero encountered in log
+  ax.plot(tau, np.log(gf), color='tab:red', label="positive")

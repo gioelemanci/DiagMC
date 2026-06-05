@@ -1,0 +1,6 @@
+1 - default but negative delta
+2 - delta -0.25 | mu -1 | 1000000
+3 - delta -0.50 | mu -1 | 1000000
+4 - delta -0.75 | mu -1 | 1000000
+5 - delta -1.00 | mu -1 | 1000000
+6 - delta -1.25 | mu -1 | 1000000
